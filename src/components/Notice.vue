@@ -1,15 +1,17 @@
 <template>
-<!--  <div class="breadcrumb">-->
+  <!--  <div class="breadcrumb">-->
   <div class="" style="margin: 62px 0 8px">
-      <div style="position: relative;height: 30px;line-height:30px;overflow: hidden;">
-        <ul class="ul" style="list-style: none;padding: 0;margin: 0">
-          <li  v-for="(item,index) in noticeList" :key="noticeList.id"><span class="glyphicon glyphicon-volume-up"></span> 通知：{{ item.content }}</li>
-        </ul>
-      </div>
-      <!--      <span style="color: #FF5722;font-weight: bold">-->
-      <!--        <span v-for="(item,index) in noticeList"-->
-      <!--              :key="noticeList.id">通知：{{ item.content }}</span>-->
-      <!--      </span>-->
+    <div style="position: relative;height: 30px;line-height:30px;overflow: hidden;">
+      <ul class="ul" style="list-style: none;padding: 0;margin: 0">
+        <li v-for="(item,index) in noticeList" :key="noticeList.id"><span class="glyphicon glyphicon-volume-up"></span>
+          通知：{{ item.content }}
+        </li>
+      </ul>
+    </div>
+    <!--      <span style="color: #FF5722;font-weight: bold">-->
+    <!--        <span v-for="(item,index) in noticeList"-->
+    <!--              :key="noticeList.id">通知：{{ item.content }}</span>-->
+    <!--      </span>-->
   </div>
 </template>
 

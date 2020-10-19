@@ -9,11 +9,11 @@
           <!--Banner组件-->
           <Banner/>
           <!--Banner组件-->
-          <!-- Vertical -->
+          <!-- Horizontal -->
           <ins class="adsbygoogle"
                style="display:block"
                data-ad-client="ca-pub-6937898095875663"
-               data-ad-slot="2927491642"
+               data-ad-slot="1168822884"
                data-ad-format="auto"
                data-full-width-responsive="true"></ins>
         </div>
@@ -32,7 +32,10 @@
     <Footer/>
   </div>
 </template>
-
+<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<!--<script>-->
+<!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+<!--</script>-->
 <script>
 import Banner from './components/Banner'
 import Notice from './components/Notice'
