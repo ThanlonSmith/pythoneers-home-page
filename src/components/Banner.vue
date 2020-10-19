@@ -19,7 +19,7 @@
         <a href="">
           <img class="img-responsive center-block"
                src="img/1200-120.jpg"
-               alt="1200x120" data-src="holder.js/1200x150"
+               alt="1200x120" data-src="holder.js/1200x200"
                data-holder-rendered="false">
           <div class="carousel-caption">
           </div>
@@ -29,7 +29,7 @@
         <a href="">
           <img class="img-responsive center-block"
                src="img/1200-120.jpg"
-               alt="1200x120" data-src="holder.js/1200x150" data-holder-rendered="false">
+               alt="1200x120" data-src="holder.js/1200x200" data-holder-rendered="false">
           <div class="carousel-caption">
             ...
           </div>

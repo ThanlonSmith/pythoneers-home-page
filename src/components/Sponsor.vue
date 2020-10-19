@@ -15,19 +15,10 @@
              data-ad-client="ca-pub-6937898095875663"
              data-ad-slot="2927491642"
              data-ad-format="auto"
-             data-full-width-responsive="true">
-        </ins>
-        <a target="_blank" href="https://s.click.taobao.com/gaJ8Uvu">
+             data-full-width-responsive="true"></ins>
+        <a target="_blank" href="https://s.click.taobao.com/gaJ8Uvu" class="col-md-12">
           <img width="100%" class="img-responsive" src="img/173-313.jpg" alt="阿里云ECS"
                style="margin-bottom: 5px"></a>
-        <a target="_blank" href="https://s.click.taobao.com/ggD7Uvu">
-          <img width="100%" class="img-responsive" src="img/300x600.jpg" alt="高性能服务器2折起"></a>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-6937898095875663"
-             data-ad-slot="2927491642"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
       </div>
     </div>
   </div>

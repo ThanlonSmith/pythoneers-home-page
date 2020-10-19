@@ -1,18 +1,47 @@
 <template>
-  <div class="breadcrumb" style="margin: 62px 0 8px auto">
-    <div>
-      <span class="glyphicon glyphicon-volume-up"></span>
-      <span style="color: #FF5722;font-weight: bold">通知：PYTHONEERS是一个专为以Python为首要编程语言、计划或已经从事Python工作的工程师，以及Python感兴趣的任何人群免费提供文档学习、资料共享的平台。</span>
-    </div>
+<!--  <div class="breadcrumb">-->
+  <div class="" style="margin: 62px 0 8px">
+      <div style="position: relative;height: 30px;line-height:30px;overflow: hidden;">
+        <ul class="ul" style="list-style: none;padding: 0;margin: 0">
+          <li  v-for="(item,index) in noticeList" :key="noticeList.id"><span class="glyphicon glyphicon-volume-up"></span> 通知：{{ item.content }}</li>
+        </ul>
+      </div>
+      <!--      <span style="color: #FF5722;font-weight: bold">-->
+      <!--        <span v-for="(item,index) in noticeList"-->
+      <!--              :key="noticeList.id">通知：{{ item.content }}</span>-->
+      <!--      </span>-->
   </div>
 </template>
 
 <script>
 export default {
-  name: "Notice"
+  name: "Notice",
+  data() {
+    return {
+      noticeList: []
+    }
+  },
+  methods: {
+    getNoticeList() {
+      this.$http
+        .get('notice/list/')
+        .then((response) => {
+          console.log(response);
+          let data = response.data
+          if (data.status === 0) {
+            this.noticeList = data.data
+          }
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }
+  },
+  created() {
+    this.getNoticeList();
+  }
 }
 </script>
-
 <style scoped>
 
 </style>
