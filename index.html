@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://pythoneers.cn/css/bootstrap-custom.min.css">
   <link rel="stylesheet" href="https://pythoneers.cn/css/public.css">
   <link rel="stylesheet" href="https://pythoneers.cn/css/nav.css">
+  <link href="//cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/theme-chalk/index.css" rel="stylesheet">
   <!--  <script data-ad-client="ca-pub-6937898095875663" async-->
   <!--          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
   <script data-ad-client="ca-pub-6937898095875663"
@@ -83,6 +84,10 @@
             </li>
 
             <li>
+              <a href="python/nowcoder-sword-offer.html">剑指Offer</a>
+            </li>
+
+            <li>
               <a href="python/leetcode-algorithm.html">Leetcode算法</a>
             </li>
 
@@ -92,10 +97,6 @@
 
             <li>
               <a href="python/leetcode-multithreading.html">Leetcode多线程</a>
-            </li>
-
-            <li>
-              <a href="python/nowcoder-sword-offer.html">剑指Offer</a>
             </li>
           </ul>
         </li>
@@ -325,22 +326,9 @@
   })();
 </script>
 <script src="https://pythoneers.cn/js/jquery-1.10.2.min.js"></script>
-<script>
-  $(function () {
-    var num = $(".ul").find("li").length;
-    if (num > 1) {
-      setInterval(function () {
-        $('.ul').animate({
-          marginTop: "-30px"
-        }, function () {
-          $(this).css({marginTop: "0"}).find("li:first").appendTo(this);
-        });
-      }, 4000);
-    }
-  });
-</script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://pythoneers.cn/js/gotop.js"></script>
 <script src="https://cdn.bootcss.com/holder/2.9.6/holder.min.js"></script>
+<script src="//cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/index.js"></script>
 </body>

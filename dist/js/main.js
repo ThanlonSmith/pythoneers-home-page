@@ -17,7 +17,7 @@ $(function () {
     setInterval(function () {
       $('.ul').animate({
         marginTop: "-30px"
-      }, 500, function () {
+      },function () {
         $(this).css({
           marginTop: "0"
         }).find("li:first").appendTo(this);

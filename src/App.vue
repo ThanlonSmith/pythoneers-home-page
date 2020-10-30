@@ -17,7 +17,7 @@
                data-ad-format="auto"
                data-full-width-responsive="true"></ins>
         </div>
-        <div class="col-md-10" style="padding: 0 2px;margin-top: 5px">
+        <div class="col-md-10" style="padding: 0 2px;margin-top: 5px;margin-bottom: 8px">
           <!--Book组件-->
           <Book/>
           <!--Book组件-->

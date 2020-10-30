@@ -2,9 +2,9 @@
   <!--  <div class="breadcrumb">-->
   <div class="" style="margin: 62px 0 8px">
     <div style="position: relative;height: 30px;line-height:30px;overflow: hidden;">
-      <ul class="ul" style="list-style: none;padding: 0;margin: 0">
+      <ul class="ul" style="list-style: none;padding-left:5px ;margin: 0">
         <li v-for="(item,index) in noticeList" :key="noticeList.id"><span class="glyphicon glyphicon-volume-up"></span>
-          通知：{{ item.content }}
+          <span style="color: rgb(255, 87, 34);font-weight: bold">通知：{{ item.content }}</span>
         </li>
       </ul>
     </div>

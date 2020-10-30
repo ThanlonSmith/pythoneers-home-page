@@ -107,35 +107,37 @@
         <!--        </div>-->
       </div>
       <!--分页begin-->
-      <nav aria-label="Page navigation" class="text-center">
-        <ul class="pagination" style="margin-bottom: 10px">
-          <li>
-            <a href="?page_num=1" aria-label="Previous">
-              <span aria-hidden="true">首页</span>
-            </a>
-          </li>
-          <li class="disabled">
-            <a href="javascript:" aria-label="Previous">
-              <span aria-hidden="true">上一页</span>
-            </a>
-          </li>
-          <li class="active"><a href="?page_num=1&amp;sort=">1</a>
-          </li>
-          <li>
-            <a href="">2</a>
-          </li>
-          <li>
-            <a href="" aria-label="Next">
-              <span aria-hidden="true">下一页</span>
-            </a>
-          </li>
-          <li>
-            <a href="" aria-label="Previous">
-              <span aria-hidden="true">尾页</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <!--      <nav aria-label="Page navigation" class="text-center">-->
+      <!--        <ul class="pagination" style="margin-bottom: 10px">-->
+      <!--          <li>-->
+      <!--            <a href="?page_num=1" aria-label="Previous">-->
+      <!--              <span aria-hidden="true">首页</span>-->
+      <!--            </a>-->
+      <!--          </li>-->
+      <!--          <li class="disabled">-->
+      <!--            <a href="javascript:" aria-label="Previous">-->
+      <!--              <span aria-hidden="true">上一页</span>-->
+      <!--            </a>-->
+      <!--          </li>-->
+      <!--          <li class="active"><a href="?page_num=1&amp;sort=">1</a>-->
+      <!--          </li>-->
+      <!--          <li>-->
+      <!--            <a href="">2</a>-->
+      <!--          </li>-->
+      <!--          <li>-->
+      <!--            <a href="" aria-label="Next">-->
+      <!--              <span aria-hidden="true">下一页</span>-->
+      <!--            </a>-->
+      <!--          </li>-->
+      <!--          <li>-->
+      <!--            <a href="" aria-label="Previous">-->
+      <!--              <span aria-hidden="true">尾页</span>-->
+      <!--            </a>-->
+      <!--          </li>-->
+      <!--        </ul>-->
+      <!--      </nav>-->
+      <el-pagination background layout="prev, pager, next" :total="total" :page-size="limit"
+                     @current-change="changePage"></el-pagination>
       <!--分页stop-->
     </div>
   </div>
@@ -146,21 +148,31 @@ export default {
   name: "Book",
   data() {
     return {
-      bookList: []
+      bookList: [],
+      total: 0,
+      limit: 12,
+      offset: 0,
     }
   },
   methods: {
     getBookList() {
-      this.$http.get('book/list/')
+      let vm = this;//vue实例
+      this.$http.get(`book/list/?limit=${vm.limit}&offset=${vm.offset}`)
         .then((response) => {
           let data = response.data
           if (data.status === 0) {
             this.bookList = data.data
+            this.total=data.total
           }
         })
         .catch(error => {
           console.log(error)
         })
+    },
+    changePage(page) {
+      // alert(page)
+      this.offset = (page - 1) * this.limit;
+      this.getBookList();
     }
   },
   created() {
@@ -170,5 +182,8 @@ export default {
 </script>
 
 <style scoped>
-
+.el-pagination.is-background{
+  text-align: center;
+  margin-bottom: 8px;
+}
 </style>
