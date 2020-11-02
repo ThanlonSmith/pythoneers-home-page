@@ -18,7 +18,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active" v-if="(index===0)" v-for="(item,index) in bannerList">
-        <a target="_blank">
+        <a target="_blank" href="https://s.click.taobao.com/3NsTJvu">
           <img class="img-responsive center-block"
                :src="(item.image)"
                alt="1200x120" data-src="holder.js/1200x200" data-holder-rendered="false">

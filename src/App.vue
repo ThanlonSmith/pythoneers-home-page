@@ -37,6 +37,7 @@
 <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
 <!--</script>-->
 <script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 import Banner from './components/Banner'
 import Notice from './components/Notice'
 import Book from './components/Book'
