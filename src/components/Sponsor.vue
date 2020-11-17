@@ -29,6 +29,7 @@
 
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({});
 export default {
   name: "Sponsor"
 }

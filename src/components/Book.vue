@@ -32,7 +32,9 @@
              :key="bookList.id">
           <div class="thumbnail">
             <a class="img-responsive" target="_blank" :href="(item.order_address)">
-              <img data-src="holder.js/400x200" alt="200x150"
+              <!--              <img class="lazy" data-src="holder.js/400x200" alt="200x150"-->
+              <!--                   :data-original="(item.image)" data-holder-rendered="true">-->
+              <img class="lazy" data-src="holder.js/400x200" alt="200x150"
                    :src="(item.image)" data-holder-rendered="false">
             </a>
             <div class="caption" style="padding-bottom: 0;padding-top: 0">
@@ -162,7 +164,7 @@ export default {
           let data = response.data
           if (data.status === 0) {
             this.bookList = data.data
-            this.total=data.total
+            this.total = data.total
           }
         })
         .catch(error => {
@@ -182,7 +184,7 @@ export default {
 </script>
 
 <style scoped>
-.el-pagination.is-background{
+.el-pagination.is-background {
   text-align: center;
   margin-bottom: 8px;
 }

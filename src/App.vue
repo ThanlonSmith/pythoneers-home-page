@@ -11,7 +11,7 @@
           <!--Banner组件-->
           <!-- Horizontal -->
           <ins class="adsbygoogle"
-               style="display:block"
+               style="display:block;margin-top: 5px"
                data-ad-client="ca-pub-6937898095875663"
                data-ad-slot="1168822884"
                data-ad-format="auto"
@@ -37,7 +37,6 @@
 <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
 <!--</script>-->
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
 import Banner from './components/Banner'
 import Notice from './components/Notice'
 import Book from './components/Book'
